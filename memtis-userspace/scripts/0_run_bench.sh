@@ -69,6 +69,7 @@ function func_memtis_setting() {
     fi
 
     if [[ "x${CONFIG_CXL_MODE}" == "xon" ]]; then
+	toggle_cpus 1
 	sudo wrmsr -p 10 $uncore_freq_regno "0x707"
 	toggle_cpus 0
 	echo "enabled" | tee /sys/kernel/mm/htmm/htmm_cxl_mode
