@@ -29,7 +29,7 @@ function func_cache_flush() {
 }
 
 function toggle_cpus() {
-	readonly new_val=$1
+	local new_val=$1
  
     for i in $(seq 10 19);
 	do
