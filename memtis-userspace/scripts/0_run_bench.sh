@@ -31,12 +31,12 @@ function func_cache_flush() {
 function toggle_cpus() {
 	readonly new_val=$1
  
-    for i in $(seq 10..19);
+    for i in $(seq 10 19);
 	do
 		echo $new_val | sudo tee /sys/devices/system/cpu/cpu$i/online
 	done
 
-	for i in $(seq 30..39);
+	for i in $(seq 30 39);
 	do
 		echo $new_val | sudo tee /sys/devices/system/cpu/cpu$i/online
 	done
