@@ -10,7 +10,7 @@ MEM_NODES=($(ls /sys/devices/system/node | grep node | awk -F 'node' '{print $NF
 
 CGROUP_NAME="htmm"
 ###### update DIR!
-DIR=/home/molivi3/0-memtis/memtis-userspace
+DIR=/users/molivi3/0-memtis/memtis-userspace
 
 CONFIG_PERF=off
 CONFIG_NS=off
